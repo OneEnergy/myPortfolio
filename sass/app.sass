@@ -1,0 +1,63 @@
+@use 'variables'
+@use 'mixins'
+
+*
+  font-family: "arial"
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  background-color: variables.$bgColor
+  color: variables.$textColor
+
+  a
+    text-decoration: none
+    color: variables.$textColor
+    transition: .4s
+  ul
+    list-style: none
+  .header
+    display: flex
+    justify-content: space-between
+    @include mixins.container
+
+    &-name
+      font-size: 3rem
+      color: variables.$primaryColor
+    &-nav
+
+      ul
+        height: 100%
+        @include mixins.flex-center
+
+      li
+        margin: 0 1rem
+        text-transform: uppercase
+        font-size: 1rem
+      .active
+        color: variables.$secundaryColor
+      a
+        &:hover
+          color: variables.$primaryColor
+    &-social
+
+      ul
+        height: 100%
+        @include mixins.flex-center
+      li
+        margin: 0 1rem
+        text-transform: uppercase
+        font-size: 1rem
+      a
+        &:hover
+          color: variables.$primaryColor
+//Main
+.main
+  width: 100%
+  &-photo
+    background-color: #1774ff70
+    width: 100vw
+    height: 100vh
+    margin: 0 auto
+    -webkit-backdrop-filter: blur(100px)

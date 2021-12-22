@@ -1,0 +1,74 @@
+* {
+  font-family: "arial";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #3a9eff;
+}
+body a {
+  text-decoration: none;
+  color: #3a9eff;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+body .header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+body .header-name {
+  font-size: 3rem;
+  color: #797F8B;
+}
+body .header-nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .header-nav li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body .header-nav .active {
+  color: #AFA9AB;
+}
+body .header-nav a:hover {
+  color: #797F8B;
+}
+body .header-social ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .header-social li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+body .header-social a:hover {
+  color: #797F8B;
+}
+
+.main {
+  width: 100%;
+}
+.main-photo {
+  background-color: #1774ff70;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(100px);
+}
+
+/*# sourceMappingURL=App.css.map */
